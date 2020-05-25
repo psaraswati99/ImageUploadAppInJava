@@ -33,7 +33,7 @@ public class Delete extends HttpServlet {
 			Statement statement = connection.createStatement();
 			int row = statement.executeUpdate(sql);
 			if(row > 0) {
-				request.getRequestDispatcher("Success.jsp").forward(request, response);
+				request.getRequestDispatcher("View").forward(request, response);
 			}
 
 		} catch (Exception e) {
