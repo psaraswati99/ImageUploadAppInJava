@@ -1,0 +1,14 @@
+MYSQL COMMANDS:
+=============================
+
+-> CREATE DATABASE DB_ImageUpload;
+
+-> USE DB_ImageUpload;
+
+-> CREATE TABLE `tb_imageupload` (
+  `ID` int(11) NOT NULL,
+  `NAME` varchar(20) DEFAULT NULL,
+  `IMAGE` longblob,
+  `IMAGEPATH` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+)
